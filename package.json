@@ -1,0 +1,35 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run watch:all",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lite": "lite-server",
+        "scss": "node-sass -o css/ css/",
+        "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+        "watch:all": "parallelshell \"npm run lite\"",
+        "clean": "rimraf dist",
+        "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+        "imagemin": "imagemin images/* -o dist/images",
+        "usemin": " usemin index.html -d dist --htmlmin -o dist/index.html",
+        "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+    },
+    "author": "Aakash Chahal",
+    "license": "ISC",
+    "devDependencies": {
+        "imagemin": "^7.0.1",
+        "lite-server": "^2.6.1"
+    },
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "bootstrap-social": "^5.1.1",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1",
+        "rimraf": "^3.0.2",
+        "usemin": "^0.6.0",
+        "usemin-cli": "^0.6.0"
+    }
+}

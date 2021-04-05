@@ -21,6 +21,7 @@
 
 .connect {
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .hide {
@@ -64,4 +65,16 @@ h1 {
     text-align: center;
     color: yellow;
     text-decoration: underline;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #42e695, #3bb2b8);
+}
+
+.modal-body {
+    width: max-content;
+}
+
+.skill {
+    padding: 5rem;
 }

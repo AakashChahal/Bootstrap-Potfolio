@@ -29,9 +29,11 @@
 }
 
 .header {
+    width: 80%;
     display: grid;
     justify-content: center;
     align-items: center;
+    margin: auto;
     /* background: linear-gradient(
         180deg,
         rgb(255, 158, 150),
@@ -40,14 +42,14 @@
     ); */
 }
 
-.header-img {
-    margin: auto;
-    width: 50%;
-}
-
 .header-img img {
     border-radius: 50%;
-    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .header-img img {
+        width: 50%;
+    }
 }
 
 .header-content {
@@ -58,7 +60,11 @@
 }
 
 .project {
+    width: 80%;
+    margin: auto;
     text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 h1 {
@@ -76,5 +82,12 @@ h1 {
 }
 
 .skill {
-    padding: 5rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.footer {
+    font-size: 1.3rem;
 }

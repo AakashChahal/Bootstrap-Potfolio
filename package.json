@@ -20,7 +20,8 @@
     "license": "ISC",
     "devDependencies": {
         "imagemin": "^7.0.1",
-        "lite-server": "^2.6.1"
+        "lite-server": "^2.6.1",
+        "uglifyjs": "^2.4.11"
     },
     "dependencies": {
         "bootstrap": "^4.6.0",

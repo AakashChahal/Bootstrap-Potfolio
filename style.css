@@ -112,3 +112,8 @@ h1 {
     font-size: 55px;
     color: red;
 }
+
+.carousel-caption {
+    position: absolute;
+    top: 0%;
+}

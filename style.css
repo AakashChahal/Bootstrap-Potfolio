@@ -24,6 +24,11 @@
     cursor: pointer;
 }
 
+.resume-btn {
+    position: absolute;
+    right: 10px;
+}
+
 .hide {
     display: none;
 }
@@ -44,6 +49,22 @@
 
 .header-img img {
     border-radius: 50%;
+}
+
+.blink {
+    color: yellow;
+    animation: blink-animation 0.5s steps(1, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 600px) {
